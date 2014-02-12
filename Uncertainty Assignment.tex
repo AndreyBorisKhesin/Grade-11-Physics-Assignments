@@ -12,6 +12,7 @@
 \item
 \begin{align*}
 f &= x_{1} + x_{2}\\
+&= (10.005 \pm .003)\text{ cm} + (20.06 \pm .03)\text{ cm}\\
 \sigma_{f} &= \sqrt{(\frac{\partial f}{\partial x_{1}})^2\sigma_{x_{1}}^2 + (\frac{\partial f}{\partial x_{2}})^2\sigma_{x_{2}}^2}\\
 &= \sqrt{(1)^2(.003)^2 + (1)^2(.03)^2}\\
 &= \sqrt{1(.000009) + 1(.0009)}\\
@@ -26,6 +27,7 @@ f &= (10.005 \pm .003)\text{ cm} + (20.06 \pm .03)\text{ cm}\\
 \item
 \begin{align*}
 f &= x_{1} - x_{2}\\
+&= (352.1 \pm .9)\text{ m} - (162.36 \pm .05)\text{ m}\\
 \sigma_{f} &= \sqrt{(\frac{\partial f}{\partial x_{1}})^2\sigma_{x_{1}}^2 + (\frac{\partial f}{\partial x_{2}})^2\sigma_{x_{2}}^2}\\
 &= \sqrt{(1)^2(.9)^2 + (-1)^2(.05)^2}\\
 &= \sqrt{1(.81) + 1(.0025)}\\
@@ -40,6 +42,7 @@ f &= (352.1 \pm .9)\text{ m} - (162.36 \pm .05)\text{ m}\\
 \item
 \begin{align*}
 f &= x_{1} + x_{2}\\
+&= (56.7 \pm .2)\text{ cm} + (93.48 \pm .01)\text{ m}\\
 \sigma_{f} &= \sqrt{(\frac{\partial f}{\partial x_{1}})^2\sigma_{x_{1}}^2 + (\frac{\partial f}{\partial x_{2}})^2\sigma_{x_{2}}^2}\\
 &= \sqrt{(1)^2(.2)^2 + (1)^2(.01)^2}\\
 &= \sqrt{1(.04) + 1(.0001)}\\
@@ -54,183 +57,97 @@ f &= (56.7 \pm .2)\text{ cm} + (93.48 \pm .01)\text{ m}\\
 \item
 \begin{align*}
 f &= x_{1} + x_{2} - x_{3}\\
+&= (14.5 \pm .2)\text{ mm} \pm (14.5 + .2)\text{ mm } - (23.1 \pm .1)\text{ mm}\\
 \sigma_{f} &= \sqrt{(\frac{\partial f}{\partial x_{1}})^2\sigma_{x_{1}}^2 + (\frac{\partial f}{\partial x_{2}})^2\sigma_{x_{2}}^2 + (\frac{\partial f}{\partial x_{3}})^2\sigma_{x_{3}}^2}\\
 &= \sqrt{(1)^2(.2)^2 + (1)^2(.2)^2 + (-1)^2(.1)^2}\\
 &= \sqrt{1(.04) + 1(.04) + 1(.01)}\\
 &= \sqrt{.04 + .04 + .01}\\
 &= \sqrt{.09}\\
 &= .3\\
-f &= (14.5 + .2)\text{ mm} + (14.5 + .2)\text{ mm } - (23.1 + .1)\text{ mm}\\
+f &= (14.5 \pm .2)\text{ mm} \pm (14.5 + .2)\text{ mm } - (23.1 \pm .1)\text{ mm}\\
 &= (14.5 + 14.5 - 23.1 \pm \sigma_{f})\text{ mm}\\
 &= (5.9 \pm .3)\text{ mm}
 \end{align*}
 \end{enumerate}
 \item
+\begin{enumerate}
+\item
 \begin{align*}
 f &= x_{1} * x_{2}\\
+&= (23.56 \pm .05)\text{ kmh}^{-1} * (56.3 \pm .4)\text{ h}\\
 \sigma_{f} &= \sqrt{(\frac{\partial f}{\partial x_{1}})^2\sigma_{x_{1}}^2 + (\frac{\partial f}{\partial x_{2}})^2\sigma_{x_{2}}^2}\\
-\sigma_{f} &= \sqrt{(x_{2})^2(.05)^2 + (x_{1})^2(.4)^2}\\
-f &= (23.56 + .05)\text{ kmh}^{-1} * (56.3 + .4)\text{ h}\\
-&= 
+&= \sqrt{(x_{2})^2(.05)^2 + (x_{1})^2(.4)^2}\\
+&= \sqrt{(56.3)^2(.0025) + (23.56)^2(.16)}\\
+&= \sqrt{3169.69(.0025) + 555.0736(.16)}\\
+&= \sqrt{1.387684 + 88.811776}\\
+&= \sqrt{90.19946}\\
+&= 9\\
+f &= (23.56 \pm .05)\text{ kmh}^{-1} * (56.3 \pm .4)\text{ h}\\
+&= (23.56 * 56.3 \pm \sigma_{f})\text{ km}\\
+&= (1326.428 \pm 9)\text{ km}\\
+&= (1326 \pm 9)\text{ km}
 \end{align*}
 \item
+\begin{align*}
+f &= \frac{x_{1}}{x_{2}}\\
+&= \frac{(15.745 \pm .006)\text{ m}}{(0.36 \pm .05)\text{ m}}\\
+\sigma_{f} &= \sqrt{(\frac{\partial f}{\partial x_{1}})^2\sigma_{x_{1}}^2 + (\frac{\partial f}{\partial x_{2}})^2\sigma_{x_{2}}^2}\\
+&= \sqrt{(\frac{1}{x_{2}})^2(.006)^2 + (\frac{-x_{1}}{x_{2}^2})^2(.05)^2}\\
+&= \sqrt{(\frac{1}{0.36})^2(.000036) + (\frac{-15.745}{0.36^2})^2(.0025)}\\
+&= \sqrt{(2.77778)^2(.000036) + (\frac{-15.745}{0.1296})^2(.0025)}\\
+&= \sqrt{7.71695(.000036) + (-121.489)^2(.0025)}\\
+&= \sqrt{0.000277778 + 14759.6(.0025)}\\
+&= \sqrt{0.000277778 + 36.8991}\\
+&= \sqrt{36.8994}\\
+&= 6\\
+f &= \frac{(15.745 \pm .006)\text{ m}}{(0.36 \pm .05)\text{ m}}\\
+&= \frac{15.745}{0.36} \pm \sigma_{f}\\
+&= 43.7361 \pm 6\\
+&= 44 \pm 6
+\end{align*}
+\item
+\begin{align*}
+f &= 2x_{1}\\
+&= 2(1.63 \pm .03)\text{ mm}\\
+\sigma_{f} &= \frac{\partial f}{\partial x_{1}}\sigma_{x_{1}}\\
+&= 2(.03)\\
+&= .06\\
+f &= 2(1.63 \pm .03)\text{ mm}\\
+&= 2(1.63) \pm \sigma_{f}\text{ mm}\\
+&= 3.26 \pm .06\text{ mm}\\
+\end{align*}
+\item
+\begin{align*}
+f &= \frac{x_{1}x_{2}}{x_{3}}\\
+&= \frac{(1.23 \pm .02)\text{ ms}^{-1} * (2.637 \pm .003)\text{ ms}^{-1}}{(5.6 \pm .1)\text{ ms}^{-1}}\\
+\sigma_{f} &= \sqrt{(\frac{\partial f}{\partial x_{1}})^2\sigma_{x_{1}}^2 + (\frac{\partial f}{\partial x_{2}})^2\sigma_{x_{2}}^2 + (\frac{\partial f}{\partial x_{3}})^2\sigma_{x_{3}}^2}\\
+&= \sqrt{(\frac{x_{2}}{x_{3}})^2(.02)^2 + (\frac{x_{1}}{x_{3}})^2(.003)^2 + (\frac{-x_{1}x_{2}}{x_{3}^2})^2(.1)^2}\\
+&= \sqrt{(\frac{2.637}{5.6})^2(.0004) + (\frac{1.23}{5.6})^2(.000009) + (\frac{-1.23(2.637)}{5.6^2})^2(.01)}\\
+&= \sqrt{(0.470893)^2(.0004) + (0.219643)^2(.000009) + (\frac{-3.24351}{31.36})^2(.01)}\\
+&= \sqrt{0.22174(.0004) + 0.048243(.000009) + (-0.103428)^2(.01)}\\
+&= \sqrt{0.000088696 + 0.000000434187 + 0.0106974)(.01)}\\
+&= \sqrt{0.0000891302 + 0.000106974}\\
+&= \sqrt{0.000196104}\\
+&= .01\\
+f &= \frac{(1.23 \pm .02)\text{ ms}^{-1} * (2.637 \pm .003)\text{ ms}^{-1}}{(5.6 \pm .1)\text{ ms}^{-1}}\\
+&= (\frac{1.23 * 2.637}{5.6} \pm \sigma_{f})\text{ ms}^{-1}\\
+&= (0.579198 \pm .01)\text{ ms}^{-1}\\
+&= (0.58 \pm .01)\text{ ms}^{-1}
+\end{align*}
+\end{enumerate}
+\item
+\begin{enumerate}
+\item
+\begin{align*}
+f &= \frac{x_{1} + 2x_{2}}{x_{3}}
+&= \frac{(61.12 \pm .05)\text{ cm} + 2(45.23 \pm .06)\text{ cm}^2}{(1.03 \pm .04)\text{ cm}}
+\end{align*}
+\item
+\end{enumerate}
 \item
 \end{enumerate}
 
+a) (61.12 +.05) cm + 2(45.23 + .06) cm2 ÷ (1.03 ± .04) cm 
 
-
-2. Perform the following operations using the rules for adding and subtracting with 
-
-uncertainties. [3 marks each]
-
-a) (10.005 + .003) cm + (20.06 + .03) cm 
-
-b) (352.1 + .9) m – (162.36 + .05) m 
-
-c) (56.7 + .2) cm + (93.48 + .01) m 
-
-d) (14.5 + .2) mm + (14.5 + .2) mm – (23.1 + .1) mm
-
-3. Perform the following operations using the rules for multiplying and dividing with 
-
-uncertainties. [3 marks each]
-
-a) (23.56 + .05) km h-1 x (56.3 + .4) h 
-
-b) (15.745 + .006) m ÷ (0.36 + .05) m 
-
-c) 2(1.63 + .03) mm 
-
-d) (1.23 + .02) ms-1 ÷ (5.6 + .1) ms-1 x (2.637 + .003) ms-1
-
-
-
-
-
-
-
-
-
-
-
-
-
-The first thing to realize about \LaTeX\ is that it is not ``WYSIWYG''.
-In other words, it isn't a word processor; what you type into your 
-.tex file is not what you'll see in your .dvi file.  For example, 
-\LaTeX\ will      completely     ignore               extra
-spaces    within                             a line of your .tex file.
-Pressing return
-in 
-the 
-middle 
-of
-a
-line
-will not register in your .dvi file. However, a double carriage-return
-is read as a paragraph break.
-
-Like this.  But any carriage-returns after the first two will be 
-completely ignored; in other words, you 
-
-
-can't 
-
-add
-
-
-
-
-
-
-more 
-
-
-
-
-space 
-
-
-between 
-
-
-
-
-lines, no matter how many times you press return in your .tex file.
-
-In order to add vertical space you have to use ``vspace''; for example, 
-you could add an inch of space by typing \verb|\vspace{1in}|, like this:
-\vspace{1in}
-
-To get three lines of space you would type \verb|\vspace{3pc}|
-(``pc'' stands for ``pica'', a font-relative size), like this:
-\vspace{3pc}
-
-Notice that \LaTeX\ commands are always preceeded by a backslash.  
-Some commands, like \verb|\vspace|, take arguments (here, a length) in
-curly brackets.  
-
-The second important thing to notice about \LaTeX\ is that you type 
-in various ``environments''...so far we've just been typing regular 
-text (except for a few inescapable usages of \verb|\verb| and the
-centered, smallcaps, large title).  There are basically two ways that 
-you can enter and/or exit an environment;
-\vspace{1pc}
-
-\centerline{this is the first way...}
-
-\begin{center}
-this is the second way.
-\end{center}
-
-\noindent Actually there is one more way, used above; for example, 
-{\sc this way}.  The way that you get in and out of environment varies
-depending on which kind of environment you want; for example, you use 
-\verb|\underline| ``outside'', but \verb|\it| ``inside''; 
-notice \underline{this} versus {\it this}.
-
-The real power of \LaTeX\ (for us) is in the math environment. You 
-push and pop out of the math environment by typing \verb|$|. For 
-example, $2x^3 - 1 = 5$ is typed between dollar signs as
-\verb|$2x^3 - 1 = 5$|. Perhaps a more interesting example is
-$\lim_{N \to \infty} \sum_{k=1}^N f(t_k) \Delta t$.
-
-You can get a fancier, display-style math 
-environment by enclosing your equation with double dollar signs.  
-This will center your equation, and display sub- and super-scripts in 
-a more readable fashion:
-
-$$\lim_{N \to \infty} \sum_{k=1}^N f(t_k) \Delta t.$$
-
-If you don't want your equation to be centered, but you want the nice 
-indicies and all that, you can use \verb|\displaystyle| and get your 
-formula ``in-line''; using our example this is 
-$\displaystyle \lim_{N \to \infty} \sum_{k=1}^N f(t_k) \Delta t.$  Of 
-course this can screw up your line spacing a little bit.
-
-There are many more things to know about \LaTeX\ and we can't 
-possibly talk about them all here.
-You can use \LaTeX\ to get tables, commutative diagrams, figures, 
-aligned equations, cross-references, labels, matrices, and all manner 
-of strange things into your documents.  You can control margins, 
-spacing, alignment, {\it et cetera} to higher degrees of accuracy than 
-the human eye can percieve.  You can waste entire days typesetting 
-documents to be ``just so''.  In short, \LaTeX\ rules.
-
-The best way to learn \LaTeX\ is by example. Get yourself a bunch
-of .tex files, see what kind of output they produce, and figure out how
-to modify them to do what you want.  There are many template and 
-sample files on the department \LaTeX\ page and in real life in the 
-big binder that should be in the computer lab somewhere.  Good luck!
-
-
-
-
-
-
-
-
-
-
-
+b) (1005.1 + .2) kmh-1 x (3.93 + .02) kmh-1 – (583.68 + .06) km2h-2
 \end{document}
